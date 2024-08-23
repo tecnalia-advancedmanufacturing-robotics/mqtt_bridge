@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.9
 import rospy
 
 from mqtt_bridge.app import mqtt_bridge_node
