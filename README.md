@@ -11,7 +11,10 @@ mqtt_bridge provides a functionality to bridge between ROS and MQTT in bidirecti
 `mqtt_bridge` and dependencies require python 3.9. otherwise it throws an error 'TypeError: 'type' object is not subscriptable'. 
 20.04 and ROS Noetic are using python 3.8 and it is NOT reocmmended to upgrade to 3.9. 
 So the work-around is to also install 3.9 on your machine, install the mqtt_bridge dependencies also in python 3.9.
-And FORCE scripts/mqtt_bridge_node.py to use python 3.9, by modifying the first line to '#!/usr/bin/env python3.9'
+  1) Install python3.9 :   apt install python3.9
+  2) Instal the depending libraries within python3.9(defined in the "dev-requirements.txt" :   python3.9 -m pip install -r requirements-dev.txt
+ 
+And then FORCE scripts/mqtt_bridge_node.py to use python 3.9, by modifying the first line to '#!/usr/bin/env python3.9'
 
 ## Principle
 
